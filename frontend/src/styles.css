@@ -1,0 +1,107 @@
+:root {
+  color-scheme: light;
+  --bg0: #070a14;
+  --bg1: #0b1024;
+  --card: rgba(255, 255, 255, 0.06);
+  --card2: rgba(255, 255, 255, 0.08);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.65);
+  --border: rgba(255, 255, 255, 0.12);
+  --accent: #7c5cff;
+  --accent2: #19d3ff;
+  --good: #32d583;
+  --bad: #ff4d6d;
+  --warn: #ffd166;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 700px at 15% 15%, rgba(124, 92, 255, 0.35), transparent 60%),
+    radial-gradient(900px 600px at 85% 10%, rgba(25, 211, 255, 0.25), transparent 55%),
+    radial-gradient(1000px 600px at 50% 100%, rgba(255, 209, 102, 0.12), transparent 60%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.card {
+  background: linear-gradient(180deg, var(--card), rgba(255, 255, 255, 0.03));
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 18px 80px rgba(0, 0, 0, 0.45);
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.085);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.btn.primary {
+  border: 1px solid rgba(124, 92, 255, 0.4);
+  background: linear-gradient(90deg, rgba(124, 92, 255, 0.85), rgba(25, 211, 255, 0.65));
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--warn);
+  box-shadow: 0 0 0 3px rgba(255, 209, 102, 0.15);
+}
+
+.dot.good {
+  background: var(--good);
+  box-shadow: 0 0 0 3px rgba(50, 213, 131, 0.16);
+}
+
+.dot.bad {
+  background: var(--bad);
+  box-shadow: 0 0 0 3px rgba(255, 77, 109, 0.14);
+}
+
