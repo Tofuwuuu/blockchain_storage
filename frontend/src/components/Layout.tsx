@@ -37,10 +37,7 @@ export function Layout({ children }: Props) {
             </div>
           </div>
 
-          <nav style={{ display: "flex", alignItems: "center", gap: 14, color: "rgba(255,255,255,0.7)" }}>
-            <a href="#features">Features</a>
-            <a href="#status">Status</a>
-          </nav>
+          <nav style={{ display: "flex", alignItems: "center", gap: 14, color: "rgba(255,255,255,0.7)" }} />
         </div>
       </header>
 

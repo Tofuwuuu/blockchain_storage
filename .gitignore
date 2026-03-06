@@ -23,6 +23,11 @@ Thumbs.db
 # Python / backend
 __pycache__/
 *.pyc
-backend/.venv/
 .venv/
+venv/
+backend/venv/
+backend/.venv/
+
+# Uploaded files
+Storage/
 
